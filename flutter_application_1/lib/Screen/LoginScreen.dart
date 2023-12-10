@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screen/HomeScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -31,6 +32,18 @@ class _LoginScreenState extends State<LoginScreen> {
               decoration: InputDecoration(labelText: 'Contraseña'),
             ),
             SizedBox(height: 16.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        HomeScreen(username: _nameController.text),
+                  ),
+                );
+              },
+              child: Text('Iniciar Sesión'),
+            ),
           ],
         ),
       ),
