@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screen/MovieDetailScreen.dart';
 import 'package:flutter_application_1/models/Movie.dart';
 
 class GenreDetailScreen extends StatelessWidget {
@@ -20,6 +21,14 @@ class GenreDetailScreen extends StatelessWidget {
             title: Text(movies[index].title),
             subtitle: Text('Género: ${movies[index].genre}'),
             leading: Image.network(movies[index].imageUrl),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MovieDetailScreen(movie: movies[index]),
+                ),
+              );
+            },
           );
         },
       ),
