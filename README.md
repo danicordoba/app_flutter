@@ -26,4 +26,5 @@ El proyecto consta de 4 pantallas:
 * Imágenes
 
 Se utilizo andorid emulator - 7.6_Fold API 33 y Chrome con dimensiones 456x945
+
 Integrantes: Cordoba Daniel y Woscoff Rocio.
